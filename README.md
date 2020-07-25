@@ -1,0 +1,1 @@
+This is a demo application to show the usage of Entity Framework Core's QueryFilter.
