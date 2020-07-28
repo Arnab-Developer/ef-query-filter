@@ -1,4 +1,5 @@
-﻿using EfQueryFilter.Lib.Models;
+﻿using EfQueryFilter.Lib.Helpers;
+using EfQueryFilter.Lib.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EfQueryFilter.Lib.Data
@@ -17,9 +18,7 @@ namespace EfQueryFilter.Lib.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder
-                .Entity<Student>()
-                .HasQueryFilter(s => s.SchoolId == SchoolId);
+            modelBuilder.SetQueryFilterOnAllEntities<ISchool>(s => s.SchoolId == SchoolId);
         }
     }
 }

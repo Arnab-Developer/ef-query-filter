@@ -1,6 +1,6 @@
 ﻿namespace EfQueryFilter.Lib.Models
 {
-    public class Student
+    public class Student : ISchool
     {
         public int Id { get; set; }
         public string Name { get; set; }
