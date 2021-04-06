@@ -1,8 +1,10 @@
-# EF core query filter
+# EF core global query filter
 
-This is a demo application to show the usage of Entity Framework Core's query filter.
+This is a demo application to show the usage of Entity Framework Core's global query filter.
 
-Query filter can be mentioned in the `OnModelCreating` method of `context` class.
+What is global query filter? https://docs.microsoft.com/en-us/ef/core/querying/filters
+
+Global query filter can be mentioned in the `OnModelCreating` method of `context` class.
 
 ```c#
 protected override void OnModelCreating(ModelBuilder modelBuilder)
